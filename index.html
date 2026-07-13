@@ -1,8 +1,4 @@
-from pathlib import Path
-
-calendar_url = "https://link.digitalownersystem.com/widget/booking/vhynuKhWWTUt2PjjYtfe"
-
-html = f"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -41,7 +37,7 @@ html = f"""<!DOCTYPE html>
         <a href="#metodo">Método</a>
         <a href="#contacto">Contacto</a>
         <a
-          href="{calendar_url}"
+          href="https://link.digitalownersystem.com/widget/booking/vhynuKhWWTUt2PjjYtfe"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -74,7 +70,7 @@ html = f"""<!DOCTYPE html>
           <div class="hero-actions">
             <a
               class="btn primary"
-              href="{calendar_url}"
+              href="https://link.digitalownersystem.com/widget/booking/vhynuKhWWTUt2PjjYtfe"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -287,7 +283,7 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
         >
           <a
             class="btn primary"
-            href="{calendar_url}"
+            href="https://link.digitalownersystem.com/widget/booking/vhynuKhWWTUt2PjjYtfe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -312,7 +308,7 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
         <div class="contact-actions">
           <a
             class="btn primary"
-            href="{calendar_url}"
+            href="https://link.digitalownersystem.com/widget/booking/vhynuKhWWTUt2PjjYtfe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -351,8 +347,3 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
   </footer>
 </body>
 </html>
-"""
-
-path = Path("/mnt/data/index_limpio.html")
-path.write_text(html, encoding="utf-8")
-print(path)

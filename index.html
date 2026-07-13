@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+from pathlib import Path
+
+html = """<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -8,7 +10,7 @@
 
   <meta
     name="description"
-    content="Sitios web, análisis estadístico, visualización de datos, automatización de reportes, capacitación y consultoría para negocios, instituciones y proyectos académicos."
+    content="Sitios web, ciencia de datos, inteligencia artificial, automatización, análisis estadístico, visualización y consultoría especializada."
   />
 
   <meta name="author" content="Máximo Pérez Rivas" />
@@ -23,58 +25,54 @@
 
   <header class="site-header">
     <div class="container nav">
-
       <a class="brand" href="#">
         <span class="brand-mark">ID</span>
-        <span>Inteligencia de Datos</span>
+
+        <span class="brand-text">
+          <strong>Inteligencia de Datos</strong>
+          <small>Ciencia de Datos + IA</small>
+        </span>
       </a>
 
       <nav class="menu" aria-label="Navegación principal">
         <a href="#servicios">Servicios</a>
         <a href="#metodo">Método</a>
         <a href="#contacto">Contacto</a>
-
         <a
-          href="https://TU-ENLACE-DEL-CALENDARIO"
+          href="TU_LINK_CALENDARIO"
           target="_blank"
           rel="noopener noreferrer"
         >
           Agendar diagnóstico
         </a>
       </nav>
-
     </div>
   </header>
 
   <main>
-
-    <!-- HERO -->
-
     <section class="hero">
       <div class="container hero-grid">
-
         <div class="hero-content">
-
           <p class="eyebrow">
-            Ciencia de datos · Automatización · Visualización
+            Sitios web · Ciencia de Datos · Inteligencia Artificial
           </p>
 
           <h1>
-            Convertimos información dispersa en
-            <span>decisiones claras</span>.
+            Impulsamos tu negocio con
+            <span>Ciencia de Datos e Inteligencia Artificial.</span>
           </h1>
 
           <p class="hero-description">
-            Desarrollamos soluciones para negocios, instituciones y proyectos
-            académicos: sitios web, análisis estadístico, visualización de datos,
-            automatización de reportes, capacitación y consultoría.
+            Desarrollamos sitios web, automatizamos procesos e implementamos
+            soluciones de análisis de datos e inteligencia artificial para
+            ayudar a negocios, instituciones y profesionales a tomar mejores
+            decisiones y ahorrar tiempo.
           </p>
 
           <div class="hero-actions">
-
             <a
               class="btn primary"
-              href="https://TU-ENLACE-DEL-CALENDARIO"
+              href="TU_LINK_CALENDARIO"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -82,35 +80,31 @@
             </a>
 
             <a class="btn secondary" href="#servicios">
-              Ver servicios
+              Conocer servicios
             </a>
-
           </div>
 
           <div class="trust-row">
             <span>Ciudad de México</span>
-            <span>Análisis de datos</span>
+            <span>Consultoría especializada</span>
             <span>Soluciones digitales</span>
           </div>
-
         </div>
 
         <aside
           class="dashboard-card"
           aria-label="Resumen visual del proceso de trabajo"
         >
-
           <div class="dashboard-header">
             <div>
-              <p class="panel-label">Panel de decisión</p>
-              <h2>Estado del proyecto</h2>
+              <p class="panel-label">Proceso</p>
+              <h2>Tu proyecto</h2>
             </div>
 
             <span class="status-dot"></span>
           </div>
 
           <div class="metric-grid">
-
             <div class="metric">
               <span class="metric-value">01</span>
               <span class="metric-label">Diagnóstico</span>
@@ -118,84 +112,77 @@
 
             <div class="metric">
               <span class="metric-value">02</span>
-              <span class="metric-label">Datos</span>
+              <span class="metric-label">Análisis</span>
             </div>
 
             <div class="metric">
               <span class="metric-value">03</span>
-              <span class="metric-label">Visualización</span>
+              <span class="metric-label">Solución</span>
             </div>
 
             <div class="metric">
               <span class="metric-value">04</span>
-              <span class="metric-label">Acción</span>
+              <span class="metric-label">Implementación</span>
             </div>
-
           </div>
 
           <div class="bars">
             <div>
               <span>Sitios web</span>
-              <i style="--w: 84%"></i>
+              <i style="--w: 82%"></i>
             </div>
 
             <div>
-              <span>Reportes</span>
-              <i style="--w: 78%"></i>
+              <span>Inteligencia artificial</span>
+              <i style="--w: 90%"></i>
             </div>
 
             <div>
               <span>Dashboards</span>
-              <i style="--w: 91%"></i>
+              <i style="--w: 88%"></i>
             </div>
 
             <div>
-              <span>Capacitación</span>
-              <i style="--w: 72%"></i>
+              <span>Automatización</span>
+              <i style="--w: 80%"></i>
             </div>
           </div>
 
-          <pre class="terminal"><code>$ iniciar_solucion --cliente local
+          <pre class="terminal"><code>$ iniciar_proyecto
 
-[OK] problema identificado
-[OK] información organizada
+[OK] diagnóstico realizado
+[OK] datos identificados
 [OK] solución propuesta
-[OK] siguientes pasos definidos
+[OK] plan de trabajo
 
 estado: listo para comenzar<span class="cursor">_</span></code></pre>
-
         </aside>
-
       </div>
     </section>
 
-    <!-- SERVICIOS -->
-
     <section id="servicios" class="section">
       <div class="container">
-
         <div class="section-heading">
           <p class="eyebrow">Servicios</p>
-          <h2>Soluciones para convertir información en valor</h2>
+          <h2>Soluciones digitales para hacer crecer tu proyecto</h2>
         </div>
 
         <div class="cards">
-
           <article class="card">
             <span class="card-number">01</span>
-            <h3>Sitios web para negocios</h3>
+            <h3>Sitios web profesionales</h3>
             <p>
-              Presencia digital clara, responsiva y orientada a generar contacto
-              para negocios locales, profesionales e instituciones.
+              Diseñamos sitios rápidos, modernos y orientados a convertir
+              visitantes en clientes.
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">02</span>
-            <h3>Automatización de reportes</h3>
+            <h3>Automatización de procesos</h3>
             <p>
-              Reducimos tareas repetitivas mediante procesos que organizan datos
-              y generan reportes de manera consistente.
+              Reducimos tareas repetitivas mediante automatización, formularios
+              inteligentes e integración de herramientas.
             </p>
           </article>
 
@@ -203,35 +190,35 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
             <span class="card-number">03</span>
             <h3>Análisis estadístico</h3>
             <p>
-              Exploramos, limpiamos e interpretamos datos para responder
-              preguntas concretas y apoyar decisiones.
+              Analizamos datos para descubrir patrones, medir resultados y
+              apoyar la toma de decisiones.
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">04</span>
-            <h3>Ciencia de datos</h3>
+            <h3>Ciencia de Datos</h3>
             <p>
-              Diseñamos indicadores, modelos e integraciones de datos para
-              comprender problemas y detectar oportunidades.
+              Construimos indicadores, dashboards y modelos para transformar
+              datos en información útil.
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">05</span>
-            <h3>Capacitación en Excel</h3>
+            <h3>Inteligencia Artificial</h3>
             <p>
-              Formación práctica en fórmulas, tablas, gráficos, análisis y
-              organización eficiente de información.
+              Implementamos asistentes inteligentes, generación de contenido,
+              automatización con IA y soluciones personalizadas.
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">06</span>
-            <h3>Consultoría académica</h3>
+            <h3>Consultoría especializada</h3>
             <p>
-              Apoyo en metodología, análisis de datos, visualización y
-              comunicación de resultados para proyectos académicos.
+              Acompañamos proyectos empresariales, institucionales y académicos
+              mediante análisis, estrategia y visualización de datos.
             </p>
           </article>
 
@@ -239,42 +226,37 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
             <span class="card-number">07</span>
             <h3>Visualización de datos</h3>
             <p>
-              Diseñamos gráficos, tableros e informes visuales que facilitan la
-              interpretación y comunicación de resultados.
+              Diseñamos dashboards, gráficos e infografías que convierten
+              información compleja en decisiones claras.
             </p>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- MÉTODO -->
-
     <section id="metodo" class="section muted">
       <div class="container">
-
         <div class="section-heading">
           <p class="eyebrow">Método</p>
-          <h2>Un proceso simple, verificable y escalable</h2>
+          <h2>Un proceso claro desde la primera reunión</h2>
         </div>
 
         <div class="steps">
-
           <div class="step">
             <strong>01</strong>
-            <h3>Diagnóstico</h3>
+            <h3>Diagnóstico gratuito</h3>
             <p>
-              Conversamos sobre el problema, los recursos disponibles y el
-              resultado que necesitas.
+              Conocemos tu proyecto, tus necesidades y el resultado que deseas
+              obtener.
             </p>
           </div>
 
           <div class="step">
             <strong>02</strong>
-            <h3>Diseño</h3>
+            <h3>Propuesta</h3>
             <p>
-              Definimos una solución mínima, clara y útil, junto con sus
-              alcances y siguientes pasos.
+              Diseñamos una solución adecuada a tus objetivos, recursos y
+              prioridades.
             </p>
           </div>
 
@@ -282,57 +264,53 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
             <strong>03</strong>
             <h3>Implementación</h3>
             <p>
-              Construimos la página, reporte, tablero, análisis o flujo
-              automatizado.
+              Desarrollamos la página, automatización, análisis, tablero o
+              solución acordada.
             </p>
           </div>
 
           <div class="step">
             <strong>04</strong>
-            <h3>Mejora</h3>
+            <h3>Seguimiento</h3>
             <p>
               Probamos, ajustamos y dejamos una base funcional preparada para
               crecer.
             </p>
           </div>
-
         </div>
 
-        <div class="hero-actions method-actions">
-
+        <div
+          class="hero-actions"
+          style="justify-content: center; margin-top: 3rem;"
+        >
           <a
             class="btn primary"
-            href="https://TU-ENLACE-DEL-CALENDARIO"
+            href="TU_LINK_CALENDARIO"
             target="_blank"
             rel="noopener noreferrer"
           >
             Agendar diagnóstico gratuito
           </a>
-
         </div>
-
       </div>
     </section>
 
-    <!-- CONTACTO -->
-
     <section id="contacto" class="section contact">
       <div class="container contact-card">
+        <p class="eyebrow">Diagnóstico gratuito</p>
 
-        <p class="eyebrow">Contacto</p>
-
-        <h2>Hablemos de tu proyecto</h2>
+        <h2>Conversemos sobre tu proyecto</h2>
 
         <p>
-          Agenda una conversación gratuita para revisar tu proyecto, identificar
-          tus necesidades y definir posibles soluciones.
+          Agenda una reunión gratuita. Revisaremos tu proyecto, identificaremos
+          oportunidades y definiremos una posible solución adaptada a tus
+          necesidades.
         </p>
 
         <div class="contact-actions">
-
           <a
             class="btn primary"
-            href="https://TU-ENLACE-DEL-CALENDARIO"
+            href="TU_LINK_CALENDARIO"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -341,11 +319,11 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
 
           <a
             class="btn secondary"
-            href="https://wa.me/525522515210?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Inteligencia%20de%20Datos."
+            href="https://wa.me/525522515210?text=Hola%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20gratuito%20para%20mi%20proyecto."
             target="_blank"
             rel="noopener noreferrer"
           >
-            Escribir por WhatsApp
+            WhatsApp
           </a>
 
           <a
@@ -354,24 +332,25 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
           >
             inteligenciadedatos.lab@gmail.com
           </a>
-
         </div>
 
         <p class="location">
-          Ciudad de México · México
+          Ciudad de México · Atención en línea para todo México
         </p>
-
       </div>
     </section>
-
   </main>
 
   <footer>
     <div class="container footer-content">
       <span>© 2026 Inteligencia de Datos</span>
-      <span>Consultoría · Datos · Automatización</span>
+      <span>Ciencia de Datos · Inteligencia Artificial · Automatización</span>
     </div>
   </footer>
-
 </body>
 </html>
+"""
+
+path = Path("/mnt/data/index.html")
+path.write_text(html, encoding="utf-8")
+print(path)

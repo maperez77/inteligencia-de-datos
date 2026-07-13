@@ -1,6 +1,8 @@
 from pathlib import Path
 
-html = """<!DOCTYPE html>
+calendar_url = "https://link.digitalownersystem.com/widget/booking/vhynuKhWWTUt2PjjYtfe"
+
+html = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -39,7 +41,7 @@ html = """<!DOCTYPE html>
         <a href="#metodo">Método</a>
         <a href="#contacto">Contacto</a>
         <a
-          href="TU_LINK_CALENDARIO"
+          href="{calendar_url}"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -72,7 +74,7 @@ html = """<!DOCTYPE html>
           <div class="hero-actions">
             <a
               class="btn primary"
-              href="TU_LINK_CALENDARIO"
+              href="{calendar_url}"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -285,7 +287,7 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
         >
           <a
             class="btn primary"
-            href="TU_LINK_CALENDARIO"
+            href="{calendar_url}"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -310,7 +312,7 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
         <div class="contact-actions">
           <a
             class="btn primary"
-            href="TU_LINK_CALENDARIO"
+            href="{calendar_url}"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -351,6 +353,6 @@ estado: listo para comenzar<span class="cursor">_</span></code></pre>
 </html>
 """
 
-path = Path("/mnt/data/index.html")
+path = Path("/mnt/data/index_limpio.html")
 path.write_text(html, encoding="utf-8")
 print(path)
